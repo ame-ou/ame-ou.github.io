@@ -70,3 +70,15 @@ a instanceof b; // 检查 b.prototype 是否在 a 的原型链上
 ## constructor
 
 _constructor_ 存在于每一个 function 的 prototype 属性中，保存了指向 function 的一个引用
+
+## **...** 运算符
+
+```js
+var a;
+var b = { ...a }; // {}
+```
+
+```js
+var a;
+var b = [...a]; // Uncaught TypeError: a is not iterable
+```
