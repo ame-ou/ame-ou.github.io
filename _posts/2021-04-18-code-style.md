@@ -14,3 +14,8 @@ tags: [frontend]
 Google 并没有把 `<script>` 插入在 `</body>` 之后，而只是没有写 `</body>` 和 `</html>` 闭合标签。这样做是符合标准的，不仅是 HTML5 标准，从第一个 HTML 正式标准 HTML 2.0 开始，这样做都是允许的，在 `</body>` 之后插入其他元素，从 HTML 2.0 起就是不合标准的。
 
 按照 HTML5 标准中的 HTML 语法规则，如果在 `</body>` 后再出现 `<script>` 或任何元素的开始标签，都是 parse error，浏览器会忽略之前的 `</body>`，即视作仍旧在 body 内。所以实际效果和写在 `</body>` 之前没有区别。
+
+## Others
+
+JavaScript 能用 `null` 的地方全用 `null`，除非只能用 `undefined` (向后端 JSON 忽略字段) \
+TypeScript 能用 `interface` 的全用 `interface`，除非只能用 `type`
