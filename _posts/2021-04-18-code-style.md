@@ -18,4 +18,4 @@ Google 并没有把 `<script>` 插入在 `</body>` 之后，而只是没有写 `
 ## Typescript
 
 - 能用 `interface` 的全用 `interface`，除非只能用 `type` (函数声明用 `type`)
-- 如果变量或属性还会用到，但值为空，用 `null`；如果标明某个变量或属性不应该存在，用 `undefined`。`null` 表示清除变量或属性的值，`undefined` 表示清除这个变量或属性。
+- 能用 `undefined` 的全用 `undefined`，除非只能用 `null`
