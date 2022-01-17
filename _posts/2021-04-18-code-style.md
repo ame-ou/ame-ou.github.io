@@ -18,4 +18,9 @@ Google 并没有把 `<script>` 插入在 `</body>` 之后，而只是没有写 `
 ## Typescript
 
 - 能用 `interface` 的全用 `interface`，除非只能用 `type` (函数声明用 `type`)
-- 能用 `undefined` 的全用 `undefined`，除非只能用 `null`
+- 能用 `undefined` 的全用 `undefined`，除非只能用 `null`，因为：
+  - null + 1 // 1
+  - typeof null // 'object'
+  - typescript 可选参数 (arg?: xxx)
+  - 未定义自然被赋值 undefined，或没有获取到对象属性
+  - json 减小体积
