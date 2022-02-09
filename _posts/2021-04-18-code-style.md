@@ -24,3 +24,4 @@ Google 并没有把 `<script>` 插入在 `</body>` 之后，而只是没有写 `
   - typescript 可选参数 (arg?: xxx)
   - 未定义自然被赋值 undefined，或没有获取到对象属性
   - json 减小体积
+  - 默认参数，如果传 `null` 则认为传递了值，其值为 `null` 而默认值不起作用
